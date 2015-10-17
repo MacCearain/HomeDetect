@@ -3,7 +3,7 @@
 
 #-----------------------
 # Email Constants
-EMAILUSERNAME = 'mccarronclan@gmail.com'
+EMAILUSERNAME = 'address@gmail.com'
 EMAILPASSWORD = 'xxxxxxxx'
 EMAILSERVER = 'smtp.gmail.com'
 EMAILSERVERPORT = 587
