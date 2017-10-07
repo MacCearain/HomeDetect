@@ -4,7 +4,7 @@
 #-----------------------
 # Email Constants
 EMAILUSERNAME = 'address@gmail.com'
-EMAILPASSWORD = 'xxxxxxxx'
+EMAILPASSWORD = 'xxxYxxxxx'
 EMAILSERVER = 'smtp.gmail.com'
 EMAILSERVERPORT = 587
 
