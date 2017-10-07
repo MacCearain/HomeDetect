@@ -1,3 +1,6 @@
 HomeDetect.cfg
 launch.json
 *.pyc
+__pycache__/
+.vscode/
+
