@@ -7,6 +7,7 @@
 
 # pylint: disable=line-too-long
 
+import monitor
 
 DIGITALHIGH = 1
 DIGITALLOW = 0
@@ -110,7 +111,7 @@ class DoorSwitch(DigitalSensor):
 class MotionSensor(DigitalSensor):
     '''
       Defines a Motion Sensor Class (inherits from Digital Sensor)
-      Motion Sensors either detect MOTION or STILL
+      Motion Sensors always detect either MOTION or STILL
     '''
     def __init__(self, PIN, name='PIR', description='PIR Motion Detector'):
         '''
@@ -192,7 +193,7 @@ class TMP36(LinearAnalogSensor):
         self.analog_value_mV = new_value_mV
         self._scaled_value = (new_value_mV * self.scaling_factor) + self.scaling_offset
         for current_monitor in self.monitor_group:
-            self.monitor_group[current_monitor].Check(self.temp_reading(self.monitor_group[current_monitor].units))
+            self.monitor_group[current_monitor].check(self.temp_reading(self.monitor_group[current_monitor].units))
 
     def temp_reading(self, units='degC'):
         '''

@@ -11,7 +11,7 @@ class McMail:
     def __init__(self, userName=None, passWord=None, serverName=None, portNumber=None):
 
         config = configparser.ConfigParser()
-        config.read('HomeDetect.cfg')
+        config.read('McMail.cfg')
 
         if userName is None:
             # Let's attempt to get the userName from the Config File
